@@ -1,5 +1,3 @@
-
-
 def parse_input():
     with open('input.txt') as f:
         blob = f.read()
@@ -8,7 +6,6 @@ def parse_input():
     for line in lines:
         if not line:
             continue
-
         direction, magnitude = line.split(' ')
         yield direction, int(magnitude)
 
